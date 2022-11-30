@@ -18,8 +18,6 @@
 
 - Responsive Personal Portfolio Website Using HTML CSS 
 
-**[Responsive Portfolio Website Aubin]**A responsive website project describing my Portfolio.
 
-👤 **Author** . [Aubin Simpeze]()
 
 💙 Check my profile on Github [Aubin](https://github.com/aubinleyoung)
