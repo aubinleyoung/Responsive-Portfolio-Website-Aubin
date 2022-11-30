@@ -1,0 +1,2 @@
+Run html linter = npx hint 
+Run ccs linter = npx stylelint "**/*.{css,scss}"

@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+}
+.white { color: white; }
+
+.header-container {
+  display: flex;
+  width: auto;
+  height: auto;
+  align-items: center;
+  background-color: #3c3a39;
+  justify-content: space-between;
+  padding: 20px;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+.header-title {
+  color: white;
+}
+
+.headline-container {
+  background-color: #1c1c19;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100vh;
+  gap: 10px;
+  position: relative;
+}
+
+.headline-title {
+  color: #ff6b00;
+  font-size: 50px;
+}
+
+.social-media-icones-container {
+  display: flex;
+}
