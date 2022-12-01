@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Montserrat:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Crete+Round&family=Montserrat:wght@100;500&display=swap');
+
 * {
   margin: 0;
 }
+
 .white { color: white; }
 
 .header-container {
@@ -14,25 +18,28 @@
   position: sticky;
   z-index: 1;
   top: 0;
-}
-
-.header-title {
-  color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .headline-container {
   background-color: #1c1c19;
+  background-image: url(./assets/images/Illustration.png);
+  background-position: right;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 100px 20px 20px 20px;
   height: 100vh;
   gap: 10px;
   position: relative;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .headline-title {
   color: #ff6b00;
   font-size: 50px;
+  font-style: unset;
+  font-family: 'Crete Round', serif;
 }
 
 .social-media-icones-container {

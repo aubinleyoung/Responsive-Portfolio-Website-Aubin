@@ -1,2 +1,4 @@
 # .gitignore
 node_modules
+Run html linter = npx hint 
+Run ccs linter = npx stylelint "**/*.{css,scss}"
