@@ -37,7 +37,7 @@
 
 > Describe your project in 1 or 2 sentences.
 
-**[Responsive-Portfolio-Website-Aubin]** Is a website which provide my portfolio and helps people to know deeply about my skills
+**[Responsive-Portfolio-Website-Aubin]** Is a website that provides my portfolio and helps people to know deeply about my skills
 
 ## 🛠 Built With <a name="built-with"></a>
 
