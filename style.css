@@ -16,9 +16,13 @@
   color:#091E42;
 
 }
+.yelow{
+  color: #FF6B00;
+}
 .bg-btn{
   background-color:rgba(255, 255, 255, 0.24);
 }
+
 .font-montesori{font-family: 'Montserrat', sans-serif;}
 /* Content of the page */
 .header-container {
@@ -38,12 +42,12 @@
 .headline-container {
   background-color: #1c1c19;
   background-image: url(./assets/images/Illustration.png);
-  background-position: right;
+  background-position: right bottom ;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   padding: 100px 20px 20px 20px;
-  height: 50vh;
+  height: 60vh;
   gap: 10px;
   position: relative;
   font-family: 'Montserrat', sans-serif;
@@ -62,7 +66,7 @@
 /* today */
 #works-container{
   display: grid;
-  grid-template-rows: 100px auto 450px 450px 450px ;
+  grid-template-rows: 100px auto 450px 450px 450px 100px;
 
 }
 .recent-works-title-block{
@@ -83,11 +87,12 @@ gap: 15px;
   display: flex;
   gap: 20px;
 
+
 }
 .tools{
   padding: 10px;
   border: 1px solid #8993A4;
-  list-style:none; 
+  list-style:none;
 }
 .see-project-btn{
   background-color: #FF6B00;
@@ -126,3 +131,80 @@ gap: 15px;
     color: white;
   
   }
+  /* About Me section */
+  #about-me-container{
+    background-color: #3c3a39;
+    background-image: url(./assets/images/Frame.png);
+    background-position: right top 25%;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 60vh 130vh;
+  }
+  .about-me-block{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 20px 40px 20px;
+    gap: 20px;
+  }
+  .abt-me{
+    font-size: 60px;
+    text-align: center;
+  }
+  .categories-container{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 20px 100px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .cat-title-1{
+    font-size: 30px;
+    list-style-type: square ;
+  }
+  .cat-title-2{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 20px;
+    list-style: none;
+  }
+  /* Contact Section */
+  #contact-container{
+    display: grid;
+    grid-template-rows: 30vh 50vh auto;
+   
+  }
+  .contact-title{
+  text-align: center;
+  padding: 50px 0px 0px 0px;
+  font-size: 1.5em;
+  color:#172B4D;
+  
+  
+
+  }
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 30px 20px;
+    gap: 10px;
+
+  }
+  .form-btn{
+    align-self: center;
+  }
+.contact-icones{
+  justify-content: center;
+}
+.input-form{
+outline: none;
+border: none;
+border-bottom: 1px solid gray;
+
+}
+.form-text-area{
+  background: #FBF8F7;
+  border: none;
+  padding: 20px;
+}
