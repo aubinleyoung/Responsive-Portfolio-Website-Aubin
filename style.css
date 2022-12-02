@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Montserrat:wght@100;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Crete+Round&family=Montserrat:wght@100;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Montserrat:wght@100;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Crete+Round&family=Montserrat:wght@100;500&display=swap");
 
 * {
   margin: 0;
+
   /* border: 1px solid black; */
 }
 
@@ -12,16 +13,15 @@
 }
 
 .blue-1 {
-  color: #091E42;
+  color: #091e42;
 }
 
 .blue-2 {
-  color: #091E42;
-
+  color: #091e42;
 }
 
 .yelow {
-  color: #FF6B00;
+  color: #ff6b00;
 }
 
 .bg-btn {
@@ -29,7 +29,7 @@
 }
 
 .font-montesori {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Content of the page */
@@ -44,7 +44,7 @@
   position: sticky;
   z-index: 1;
   top: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .headline-container {
@@ -58,14 +58,14 @@
   height: 60vh;
   gap: 10px;
   position: relative;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .headline-title {
   color: #ff6b00;
   font-size: 50px;
   font-style: unset;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
 }
 
 .social-media-icones-container {
@@ -76,40 +76,36 @@
 #works-container {
   display: grid;
   grid-template-rows: 100px auto 450px 450px 450px 100px;
-
 }
 
 .recent-works-title-block {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Crete Round';
+  font-family: "Crete Round", serif;
   font-size: 30px;
 }
 
 .recent-works {
   display: flex;
   flex-direction: column;
-  padding: 0px 20px 20px 20px;
+  padding: 0 20px 20px 20px;
   gap: 15px;
-
 }
 
 .tools-container {
   display: flex;
   gap: 20px;
-
-
 }
 
 .tools {
   padding: 10px;
-  border: 1px solid #8993A4;
+  border: 1px solid #8993a4;
   list-style: none;
 }
 
 .see-project-btn {
-  background-color: #FF6B00;
+  background-color: #ff6b00;
   width: 100px;
   height: 40px;
   color: white;
@@ -126,18 +122,15 @@
   background-repeat: no-repeat;
   position: relative;
   gap: 15px;
-
 }
 
 .works-title {
-
-  font-family: 'Crete Round';
+  font-family: "Crete Round", serif;
   font-size: 32px;
-
 }
 
 .see-project {
-  background-color: #FF6B00;
+  background-color: #ff6b00;
   height: 40px;
   padding: auto;
   position: absolute;
@@ -146,7 +139,6 @@
   left: 0;
   border: none;
   color: white;
-
 }
 
 /* About Me section */
@@ -197,17 +189,13 @@
 #contact-container {
   display: grid;
   grid-template-rows: 30vh 50vh auto;
-
 }
 
 .contact-title {
   text-align: center;
-  padding: 50px 0px 0px 0px;
+  padding: 50px 0 0 0;
   font-size: 1.5em;
-  color: #172B4D;
-
-
-
+  color: #172b4d;
 }
 
 .contact-form {
@@ -215,7 +203,6 @@
   flex-direction: column;
   padding: 30px 20px 30px 20px;
   gap: 10px;
-
 }
 
 .form-btn {
@@ -230,11 +217,10 @@
   outline: none;
   border: none;
   border-bottom: 1px solid gray;
-
 }
 
 .form-text-area {
-  background: #FBF8F7;
+  background: #fbf8f7;
   border: none;
   padding: 20px;
 }
