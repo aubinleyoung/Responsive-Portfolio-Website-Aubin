@@ -1,2 +1,9 @@
-t 
+<<<<<<< HEAD
+
 node_modules
+=======
+# .gitignore
+node_modules
+Run html linter = npx hint 
+Run ccs linter = npx stylelint "**/*.{css,scss}"
+>>>>>>> header-and-headline
