@@ -3,13 +3,24 @@
 
 * {
   margin: 0;
-  /* border: 1px solid blac */
+  /* border: 1px solid black; */
 }
-
+/* class to import */
 .white {
   color: white;
 }
+.blue-1{
+  color: #091E42;
+}
+.blue-2{
+  color:#091E42;
 
+}
+.bg-btn{
+  background-color:rgba(255, 255, 255, 0.24);
+}
+.font-montesori{font-family: 'Montserrat', sans-serif;}
+/* Content of the page */
 .header-container {
   display: flex;
   width: auto;
@@ -51,48 +62,67 @@
 /* today */
 #works-container{
   display: grid;
-  grid-template-rows: 100px auto 400px ;
+  grid-template-rows: 100px auto 450px 450px 450px ;
+
 }
 .recent-works-title-block{
 display: flex;
 align-items: center;
 justify-content: center;
+font-family: 'Crete Round';
+font-size: 30px;
 }
 .recent-works{
 display: flex;
 flex-direction: column;
 padding: 0px 20px 20px 20px;
+gap: 15px;
 
 }
 .tools-container{
   display: flex;
   gap: 20px;
-  align-items: flex-start;
+
 }
 .tools{
-  padding: 5px;
+  padding: 10px;
+  border: 1px solid #8993A4;
+  list-style:none; 
 }
 .see-project-btn{
   background-color: #FF6B00;
   width: 100px;
-  height: 30px;
+  height: 40px;
   color: white;
+  border: none;
 }
-
-
-
-
-
-
 .works{
   display: flex;
   flex-direction: column;
-  padding: 40px 20px 20px 20px;
+  color: white;
+  padding: 120px 20px 20px 20px;
   background-image: url(./assets/images/bgi2.png);
   background-size: cover;
   background-repeat: no-repeat;
-  justify-content: space-evenly;
+  position: relative;
+  gap: 15px;
+
+  }
+  .works-title{
+
+    font-family: 'Crete Round';
+    font-size: 32px;
+   
   }
   .see-project{
     background-color: #FF6B00;
+    height: 40px;
+    padding: auto ;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: none;
+    color: white;
+  
   }
