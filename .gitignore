@@ -7,3 +7,70 @@ node_modules
 Run html linter = npx hint 
 Run ccs linter = npx stylelint "**/*.{css,scss}"
 >>>>>>> header-and-headline
+
+# htm contact
+</section>
+    <section id="contact-container">
+        <h3 class="contact-title font-montesori">I'm always <br>interested in hearing <br>about new projects, <br>so if
+            you'd like to <br>chat please get in touch.</h3>
+        <form action="" class="contact-form">
+            <!-- <label for="full-name">Full name</label> -->
+            <input type="text" id="full-name" placeholder="Full name" class="input-form"><br>
+
+            <!-- <label for="email-address">Email addreaa</label> -->
+            <input type="email" placeholder="Email address" class="input-form"><br>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Leave me a comment"
+                class="form-text-area"></textarea><br>
+            <button class="form-btn see-project-btn">Get in touch</button>
+        </form><br>
+        <div class="contact-icones social-media-icones-container">
+            <img src="/assets/icons/1.png" alt="">
+            <img src="/assets/icons/2.png" alt="">
+            <img src="/assets/icons/3.png" alt="">
+            <img src="/assets/icons/4.png" alt="">
+            <img src="/assets/icons/5.png" alt="">
+        </div>
+    </section>
+
+    # css contact
+    
+/* Contact Section */
+#contact-container {
+  display: grid;
+  grid-template-rows: 30vh 50vh auto;
+}
+
+.contact-title {
+  text-align: center;
+  padding: 50px 0 0 0;
+  font-size: 1.5em;
+  color: #172b4d;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px 30px 20px;
+  gap: 10px;
+}
+
+.form-btn {
+  align-self: center;
+}
+
+.contact-icones {
+  justify-content: center;
+}
+
+.input-form {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.form-text-area {
+  background: #fbf8f7;
+  border: none;
+  padding: 20px;
+}
