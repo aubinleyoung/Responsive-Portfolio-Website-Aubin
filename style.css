@@ -3,7 +3,6 @@
 
 * {
   margin: 0;
-
   border: 1px solid black;
 }
 
@@ -147,7 +146,7 @@
   background-repeat: no-repeat;
   position: relative;
   gap: 15px;
-  margin: 0px 20px 0px 20px;
+  margin: 0 20px 0 20px;
 }
 
 .works-title {
