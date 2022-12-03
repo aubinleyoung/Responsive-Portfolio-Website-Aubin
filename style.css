@@ -4,7 +4,7 @@
 * {
   margin: 0;
 
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 
 /* class to import */
@@ -33,14 +33,14 @@
 }
 
 /* Content of the page */
-.nav-container {
+.header-container {
   display: flex;
   width: auto;
   height: auto;
   align-items: center;
   background-color: #3c3a39;
   justify-content: space-between;
-  padding: 20px;
+  padding: 5px 20px 5px 20px;
   position: sticky;
   z-index: 1;
   top: 0;
@@ -60,12 +60,12 @@
 .headline-container {
   background-color: #1c1c19;
   background-image: url(./assets/images/Illustration.png);
-  background-position: right bottom;
+  background-position: right bottom -30%;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  padding: 100px 20px 20px 20px;
-  height: 60vh;
+  padding: 120px 20px 20px 20px;
+  height: 50vh;
   gap: 10px;
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -87,11 +87,13 @@
 /* today */
 #works-container {
   display: grid;
-  grid-template-rows: 100px auto 450px 450px 450px 100px;
+  grid-template-rows: 150px auto 450px 450px 450px 100px;
+  padding-top: 8em;
 }
 
 .recent-works-title-block {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: "Crete Round", serif;
@@ -107,6 +109,7 @@
 
 .tools-container {
   display: flex;
+  flex-direction: row;
   gap: 20px;
   margin-left: -2.5em;
 }
@@ -144,6 +147,7 @@
   background-repeat: no-repeat;
   position: relative;
   gap: 15px;
+  margin: 0px 20px 0px 20px;
 }
 
 .works-title {
@@ -177,7 +181,7 @@
 #about-me-container {
   background-color: #1c1a19;
   background-image: url(./assets/images/Frame.png);
-  background-position: right top 25%;
+  background-position: right top 43vh;
   background-repeat: no-repeat;
   display: grid;
   grid-template-rows: 72vh 2px 130vh;
@@ -223,7 +227,7 @@
 .categories-container {
   display: flex;
   flex-direction: column;
-  padding: 100px 20px 100px 20px;
+  padding: 15vh 20px 100px 20px;
   justify-content: center;
   align-items: center;
   gap: 30px;
