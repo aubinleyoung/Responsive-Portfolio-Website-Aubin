@@ -3,6 +3,7 @@
 
 * {
   margin: 0;
+
   /* border: 1px solid black; */
 }
 
@@ -64,7 +65,7 @@
   display: flex;
   flex-direction: column;
   padding: 120px 20px 20px 20px;
-  height: 50vh;
+  height: 500px;
   gap: 10px;
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -107,6 +108,8 @@
 }
 
 .tools-container {
+  display: flex;
+  flex-direction: row;
   gap: 20px;
   margin-left: -2.5em;
 }
@@ -115,7 +118,7 @@
   padding: 10px;
   border: 1px solid #8993a4;
   list-style: none;
-  float: left;
+  gap: 20px;
 }
 
 .see-project-btn {
@@ -183,6 +186,7 @@
   background-repeat: no-repeat;
   display: grid;
   grid-template-rows: 72vh 2px 130vh;
+  height: 1901px;
 }
 
 .get-resume-btn {
@@ -225,10 +229,10 @@
 .categories-container {
   display: flex;
   flex-direction: column;
-  padding: 15vh 20px 100px 20px;
   justify-content: center;
   align-items: center;
   gap: 30px;
+  height: 1241px;
 }
 
 .cat-title-1-1 {
@@ -259,12 +263,76 @@
 /* form-section */
 
 .form-section {
-  display: grid;
-  grid-template-rows: 150px auto 450px 450px 450px 100px;
-  padding-top: 8em;
-  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding-top: 150px;
 }
 
-/* .form-container{
+.contact-title {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 5px 10px 5px 10px;
+  font-size: 2em;
+  color: #172b4d;
+}
 
-} */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px 120px 20px;
+  gap: 20px;
+}
+
+.input-form {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #dfe1e6;
+  padding: 0 0 10px 20px;
+  font-size: 15px;
+}
+
+.form-text-area {
+  background: #fbf8f7;
+  border: none;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.form-button {
+  background-color: #ff6b00;
+  width: 100px;
+  height: 40px;
+  color: white;
+  border: none;
+  align-self: center;
+}
+
+.form-button:hover {
+  cursor: pointer;
+  border: 2px solid grey;
+}
+
+.form-button:active {
+  scale: 0.9;
+}
+
+.form-section-media-icons {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 1em;
+  border-block-start: 1px solid #dfe1e6;
+  margin-left: -20px;
+  align-items: center;
+  height: 70px;
+}
+
+.end-line {
+  width: 120px;
+  height: 1px;
+  background-color: #0d151e;
+  align-self: center;
+  margin-bottom: 10px;
+}
