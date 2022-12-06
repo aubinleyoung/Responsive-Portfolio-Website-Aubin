@@ -131,11 +131,16 @@
 
 .see-project-btn:hover {
   cursor: pointer;
-  border: 2px solid grey;
+  border: 2px solid #ff6b00;
+  background-color: #fff5e1;
+  color: #ff6b00;
 }
 
 .see-project-btn:active {
   scale: 0.9;
+  color: white;
+  background-color: #e05304;
+  border: none;
 }
 
 .works {
@@ -171,11 +176,16 @@
 
 .see-project:hover {
   cursor: pointer;
-  border: 2px solid grey;
+  border: 2px solid #ff6b00;
+  background-color: #fff5e1;
+  color: #ff6b00;
 }
 
 .see-project:active {
-  scale: 0.95;
+  scale: 0.9;
+  color: white;
+  background-color: #e05304;
+  border: none;
 }
 
 /* About Me section */
@@ -199,11 +209,16 @@
 
 .get-resume-btn:hover {
   cursor: pointer;
-  border: 2px solid grey;
+  border: 2px solid #ff6b00;
+  background-color: #fff5e1;
+  color: #ff6b00;
 }
 
 .get-resume-btn:active {
   scale: 0.9;
+  color: white;
+  background-color: #e05304;
+  border: none;
 }
 
 .about-me-block {
@@ -311,11 +326,16 @@
 
 .form-button:hover {
   cursor: pointer;
-  border: 2px solid grey;
+  border: 2px solid #ff6b00;
+  background-color: #fff5e1;
+  color: #ff6b00;
 }
 
 .form-button:active {
   scale: 0.9;
+  background-color: #e05304;
+  color: white;
+  border: none;
 }
 
 .form-section-media-icons {
