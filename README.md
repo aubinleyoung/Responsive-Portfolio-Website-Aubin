@@ -38,8 +38,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live Demo Link](Not yet available)
 [Figma Link](https://www.figma.com/file/OvAGBygp8Pz8Qc0zhGJdal/My-Updated-Portfolio?node-id=0%3A1&t=vCpCFQbJUXM34j2G-0)
+[Live Demo Link](Not yet available)
 [Project requirements Link](Not yet available)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
