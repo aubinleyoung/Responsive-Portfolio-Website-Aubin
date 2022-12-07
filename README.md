@@ -61,10 +61,6 @@ To get a local copy up and running follow these simple example steps.
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
-
-## 👥 Authors <a name="authors"></a>
 👤 **Aubin SIMPEZE**
 
 - GitHub: [@githubhandle](https://github.com/aubinleyoung)
