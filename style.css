@@ -143,6 +143,11 @@
   border: none;
 }
 
+.myproject-image:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
 .works {
   display: flex;
   flex-direction: column;
