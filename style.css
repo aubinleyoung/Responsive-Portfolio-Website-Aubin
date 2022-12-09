@@ -393,7 +393,7 @@
 
   .headline-container {
     height: 72vh;
-    background-image: url(assets/images/Illustration-header\ \(1\) .png);
+    background-image: url(assets/images/Illustration-header\ 1.png);
     background-position: right bottom 30%;
     display: grid;
     grid-template-columns: 48px 10px;
@@ -448,11 +448,13 @@
   }
 
   .line {
-    width: 65%;
+    width: 67%;
+    margin-top: 30px;
+    align-self: flex-end;
   }
 
   .work-img {
-    width: 600px;
+    width: 730px;
     height: auto;
   }
 
@@ -477,6 +479,60 @@
     text-align: start;
   }
 
+  .see-project {
+    display: none;
+  }
+
+  .works {
+    cursor: pointer;
+  }
+
+  .works:hover > .hide {
+    display: none;
+  }
+
+  .works:hover {
+    background-image: url(assets/images/Img\ Placeholder\ 1.png);
+    border: 2px solid #091e42;
+  }
+
+  .works:hover > .see-project {
+    display: block;
+  }
+
+  .work2 {
+    background-image: url(assets/images/Img\ Placeholder\ 3.png);
+  }
+
+  .work3 {
+    background-image: url(assets/images/Mask\ Group\ 1.png);
+  }
+
+  .work5 {
+    background-image: url(assets/images/Img\ Placeholder\ 3.png);
+  }
+
+  .work6 {
+    background-image: url(assets/images/Mask\ Group\ 1.png);
+  }
+
+  /* About me */
+  #about-me-container {
+    background-image: none;
+    height: 150vh;
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+
+  .about-me-block {
+    background-image: url(assets/images/Frame\ 1.png);
+    background-repeat: no-repeat;
+    background-position: top right 1%;
+    height: 50vh;
+    text-align: left;
+    padding: 10vh 20px 4vh 70px;
+  }
+
   .about-me-p {
     inline-size: 500px;
     overflow-wrap: break-word;
@@ -489,39 +545,12 @@
     gap: 200px;
     row-gap: 20px;
     height: fit-content;
+    justify-content: space-between;
+    margin: 5px 40px 0 50px;
   }
 
-  .work2 {
-    background-image: url(assets/images/Img\ Placeholder\ \(3\) .png);
-  }
-
-  .work3 {
-    background-image: url(assets/images/Mask\ Group\ \(1\) .png);
-  }
-
-  .work5 {
-    background-image: url(assets/images/Img\ Placeholder\ \(3\) .png);
-  }
-
-  .work6 {
-    background-image: url(assets/images/Mask\ Group\ \(1\) .png);
-  }
-
-  /* About me */
-  #about-me-container {
-    background-image: none;
-    height: 150vh;
-    display: grid;
-    grid-template-rows: auto auto;
-  }
-
-  .about-me-block {
-    background-image: url(assets/images/Frame\ \(1\) .png);
-    background-repeat: no-repeat;
-    background-position: top right 1%;
-    height: 50vh;
-    text-align: left;
-    padding: 10vh 20px 4vh 70px;
+  .line2 {
+    width: 90%;
   }
 
   .cat-title-1-1 {
@@ -569,11 +598,16 @@
     grid-row: 1/2;
     text-align: left;
     padding-left: 60px;
+    align-items: flex-start;
   }
 
   .form-contact {
     grid-column: 2/3;
     grid-row: 1/2;
+  }
+
+  .form-button {
+    align-self: flex-start;
   }
 
   .form-section-media-icons {
@@ -586,7 +620,7 @@
     display: none;
   }
 
-  .see-project {
+  .end-line {
     display: none;
   }
 
