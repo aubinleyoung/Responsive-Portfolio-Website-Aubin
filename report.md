@@ -5,8 +5,8 @@
 - [ ] Image text alternatives: added descriptive alt to images
 - [ ] Text headings:corrected the hierarchy of heading levels
 - [ ] Color contrast :There was sufficient color contrast.
-      Resize
-      Interaction (labels are optional but recommended as voiceover tools can read them, and should be set as invisible to match the Figma design)
-      Moving content
-      Multimedia
-      The basic structure of the page
+- [ ]Resize:no issues found.
+- [ ]Interaction :We added labels to the fomr imput tags.
+- [ ] Moving content:no issues found.
+- [ ] Multimedia:no issues found.
+- [ ] The basic structure of the page:no issues found.
