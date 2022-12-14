@@ -21,7 +21,7 @@
 }
 
 .yelow {
-  color: #ff6b00;
+  color: #8a3b00;
 }
 
 .bg-btn {
@@ -122,7 +122,7 @@
 }
 
 .see-project-btn {
-  background-color: #ff6b00;
+  background-color: #8a3b00;
   width: 100px;
   height: 40px;
   color: white;
@@ -131,9 +131,10 @@
 
 .see-project-btn:hover {
   cursor: pointer;
-  border: 2px solid #ff6b00;
-  background-color: #fff5e1;
-  color: #ff6b00;
+  border: 2px solid #8a3b00;
+  background-color: white;
+  color: #8a3b00;
+  font-weight: bold;
 }
 
 .see-project-btn:active {
@@ -162,7 +163,7 @@
 }
 
 .see-project {
-  background-color: #ff6b00;
+  background-color: #8a3b00;
   height: 40px;
   padding: auto;
   position: absolute;
@@ -176,9 +177,10 @@
 
 .see-project:hover {
   cursor: pointer;
-  border: 2px solid #ff6b00;
-  background-color: #fff5e1;
-  color: #ff6b00;
+  border: 2px solid #8a3b00;
+  background-color: white;
+  color: #8a3b00;
+  font-weight: bold;
 }
 
 .see-project:active {
@@ -202,16 +204,17 @@
 .get-resume-btn {
   width: 10em;
   height: 40px;
-  background-color: #ff6b00;
+  background-color: #8a3b00;
   border: none;
   color: white;
 }
 
 .get-resume-btn:hover {
   cursor: pointer;
-  border: 2px solid #ff6b00;
-  background-color: #fff5e1;
-  color: #ff6b00;
+  border: 2px solid #8a3b00;
+  background-color: white;
+  color: #8a3b00;
+  font-weight: bold;
 }
 
 .get-resume-btn:active {
@@ -240,6 +243,7 @@
 .abt-me {
   font-size: 60px;
   text-align: center;
+  color: #ff6b00;
 }
 
 .categories-container {
@@ -317,7 +321,7 @@
 }
 
 .form-button {
-  background-color: #ff6b00;
+  background-color: #8a3b00;
   width: 100px;
   height: 40px;
   color: white;
@@ -327,9 +331,10 @@
 
 .form-button:hover {
   cursor: pointer;
-  border: 2px solid #ff6b00;
-  background-color: #fff5e1;
-  color: #ff6b00;
+  border: 2px solid #8a3b00;
+  background-color: white;
+  color: #8a3b00;
+  font-weight: bold;
 }
 
 .form-button:active {
@@ -547,6 +552,7 @@
     height: fit-content;
     justify-content: space-between;
     margin: 5px 40px 0 50px;
+    padding: 0 50px 20px 50px;
   }
 
   .line2 {
@@ -604,6 +610,14 @@
   .form-contact {
     grid-column: 2/3;
     grid-row: 1/2;
+  }
+
+  .input-form {
+    width: 90%;
+  }
+
+  .form-text-area {
+    width: 88%;
   }
 
   .form-button {
