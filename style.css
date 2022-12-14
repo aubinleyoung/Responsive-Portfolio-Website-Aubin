@@ -21,7 +21,7 @@
 }
 
 .yelow {
-  color: #8A3B00;
+  color: #8a3b00;
 }
 
 .bg-btn {
@@ -122,7 +122,7 @@
 }
 
 .see-project-btn {
-  background-color: #8A3B00;
+  background-color: #8a3b00;
   width: 100px;
   height: 40px;
   color: white;
@@ -131,9 +131,9 @@
 
 .see-project-btn:hover {
   cursor: pointer;
-  border: 2px solid #8A3B00;
-  background-color:white;
-  color: #8A3B00;
+  border: 2px solid #8a3b00;
+  background-color: white;
+  color: #8a3b00;
   font-weight: bold;
 }
 
@@ -160,11 +160,10 @@
 .works-title {
   font-family: "Crete Round", serif;
   font-size: 32px;
-  
 }
 
 .see-project {
-  background-color: #8A3B00;
+  background-color: #8a3b00;
   height: 40px;
   padding: auto;
   position: absolute;
@@ -178,9 +177,9 @@
 
 .see-project:hover {
   cursor: pointer;
-  border: 2px solid #8A3B00;
-  background-color:white;
-  color: #8A3B00;
+  border: 2px solid #8a3b00;
+  background-color: white;
+  color: #8a3b00;
   font-weight: bold;
 }
 
@@ -205,16 +204,16 @@
 .get-resume-btn {
   width: 10em;
   height: 40px;
-  background-color: #8A3B00;
+  background-color: #8a3b00;
   border: none;
   color: white;
 }
 
 .get-resume-btn:hover {
   cursor: pointer;
-  border: 2px solid #8A3B00;
-  background-color:white;
-  color: #8A3B00;
+  border: 2px solid #8a3b00;
+  background-color: white;
+  color: #8a3b00;
   font-weight: bold;
 }
 
@@ -322,7 +321,7 @@
 }
 
 .form-button {
-  background-color: #8A3B00;
+  background-color: #8a3b00;
   width: 100px;
   height: 40px;
   color: white;
@@ -332,9 +331,9 @@
 
 .form-button:hover {
   cursor: pointer;
-  border: 2px solid #8A3B00;
-  background-color:white;
-  color: #8A3B00;
+  border: 2px solid #8a3b00;
+  background-color: white;
+  color: #8a3b00;
   font-weight: bold;
 }
 
