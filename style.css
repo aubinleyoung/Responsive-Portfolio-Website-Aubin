@@ -7,6 +7,10 @@
   /* border: 1px solid black; */
 }
 
+a {
+  text-decoration: none;
+}
+
 /* class to import */
 .white {
   color: white;
@@ -32,7 +36,49 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.nav-active {
+  position: fixed;
+  background-color: #3c3a39;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  color: #dfe1e6;
+  display: none;
+  padding: 10px 10px 0 0;
+}
+
+.display-active-menu {
+  display: block;
+}
+
+.close-menu {
+  position: absolute;
+  right: 0;
+  padding: 50px 45px 0 0;
+}
+
+.nav-active a {
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.nav-active li {
+  border-bottom: 1px solid #fff5e1;
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nav-active ul {
+  margin: auto;
+  width: 80%;
+  padding: 80px 15px 00 10px;
+}
+
 /* Content of the page */
+
 .header-container {
   display: flex;
   width: auto;
@@ -50,6 +96,8 @@
 .menu-btn {
   background-color: unset;
   border: none;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -84,7 +132,6 @@
   margin-left: -3em;
 }
 
-/* today */
 #works-container {
   display: grid;
   grid-template-rows: 150px auto 450px 450px 450px 450px 450px 450px 100px;
