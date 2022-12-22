@@ -1,180 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style.css" />
+    <title>Aubin SIMPEZE - Full-Sack Web Developer</title>
+  </head>
 
+  <body>
+    <header class="header-container hide-menu">
+      <a href="index.html" class="logo">AubinLeYoung</a>
+      <nav class="nav-container">
+        <button class="menu-btn" type="button">
+          <img
+            src="./assets/icons/menu.png"
+            alt="open-menu"
+            class="open-menu"
+          />
+        </button>
+        <ul class="portfolio-menu">
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="#about-me-container">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="mail-icone">
+            <a href="mailto:aubinsimpeze01@gmail.com"
+              ><img src="assets/icons/email_icone.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </nav>
 
-  <title>Aubin SIMPEZE - Full-Sack Web Developer</title>
-</head>
-
-<body>
-  <header class="header-container hide-menu">
-    <a href="index.html" class="logo">AubinLeYoung</a>
-    <nav class="nav-container">
-      <button class="menu-btn" type="button">
-        <img src="./assets/icons/menu.png" alt="open-menu" class="open-menu" />
-      </button>
-      <ul class="portfolio-menu">
-        <li><a href="index.html">Portfolio</a></li>
-        <li><a href="#about-me-container">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li class="mail-icone">
-          <a href="mailto:aubinsimpeze01@gmail.com"><img src="assets/icons/email_icone.png" alt="" /></a>
+      <div class="nav-active">
+        <button class="menu-btn" type="button">
+          <img src="assets/icons/Icon - Cancel.png" alt="" class="close-menu" />
+        </button>
+        <ul>
+          <li class="list-menu"><a href="index.html">Portfolio</a></li>
+          <li class="list-menu"><a href="#about-me-container">About</a></li>
+          <li class="list-menu"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="headline-container">
+      <h1 class="white headline-text">
+        <span class="headline-title"
+          >Hey There <br />
+          I'm Aubin</span
+        ><br />
+        I am a Software Developer
+      </h1>
+      <p class="white headline-p">
+        I can help you build a product , feature or website Look through some of
+        my work andexperience! If you like what you see and have a project you
+        need coded, don’t hestiate to contact me.
+      </p>
+      <ul class="social-media-icones-container">
+        <li>
+          <a href="https://github.com/aubinleyoung"
+            ><img src="assets/icons/1.png" alt="Github link"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/aubin-simpeze-7a5b7a220/"
+            ><img src="assets/icons/2.png" alt="LinkedIn link"
+          /></a>
+        </li>
+        <li>
+          <a href=""><img src="assets/icons/3.png" alt="Angelist link" /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/SimpezeAubin"
+            ><img src="assets/icons/4.png" alt="Twitter link"
+          /></a>
+        </li>
+        <li>
+          <a href=""><img src="assets/icons/5.png" alt="Medium-link" /></a>
         </li>
       </ul>
-    </nav>
+    </section>
+    <section id="works-container">
+      <div class="recent-works-title-block">
+        <h2 class="recent-works-title">My Recent Works</h2>
+        <hr class="line" />
+      </div>
+      <div class="recent-works"></div>
+      <div class="pjt"></div>
+    </section>
+    <section id="about-me-container">
+      <div class="about-me-block">
+        <h3 class="works-title yelow abt-me">About me</h3>
+        <p class="font-montesori about-me-p white">
+          Hello I’m a software developer! I can help you build a product ,
+          feature orwebsite Look through some of my work and experience! If you
+          like what you see and have a project youneed coded, don’t hestiate to
+          contact me.
+        </p>
+        <button class="get-resume-btn" type="button">Get My Resume</button>
+      </div>
+      <hr class="line line2" />
+      <div class="categories-container font-montesori white">
+        <ul class="cat-title-2 grid1">
+          <li class="cat-title-1-1">Language</li>
+          <li>Javascript</li>
+          <li>Ruby</li>
+          <li>Html</li>
+          <li>Css</li>
+        </ul>
 
+        <ul class="cat-title-2 grid2">
+          <li class="cat-title-1-2">Frameworks</li>
+          <li>Bootstrap</li>
+          <li>Ruby on Rails</li>
+          <li>RSPec</li>
+          <li>CapyBara</li>
+          <li>Selenium</li>
+        </ul>
 
-    <div class="nav-active">
-      <button class="menu-btn" type="button">
-        <img src="assets/icons/Icon - Cancel.png" alt="" class="close-menu">
-      </button>
-      <ul>
-        <li class="list-menu"><a href="index.html">Portfolio</a></li>
-        <li class="list-menu"><a href="#about-me-container">About</a></li>
-        <li class="list-menu"><a href="#contact">Contact</a></li>
+        <ul class="cat-title-2 grid3">
+          <li class="cat-title-1-3">Skills</li>
+          <li>Codekit</li>
+          <li>Github</li>
+          <li>Codepen</li>
+          <li>Gitlab</li>
+          <li>Terminal</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer id="contact" class="form-section">
+      <h2 class="contact-title font-montesori">
+        I'm always <br />interested in hearing <br />about new projects,
+        <br />so if you'd like to <br />chat please get in touch.
+      </h2>
+      <form
+        action="https://formspree.io/f/mwkzgoyj"
+        method="post"
+        class="form-container"
+      >
+        <label for="Name">
+          <input
+            type="text"
+            name="Name"
+            id="name"
+            placeholder="Full name"
+            maxlength="30"
+            class="input-form"
+            required
+          />
+        </label>
+
+        <label for="Email">
+          <input
+            type="email"
+            name="Email"
+            id="email"
+            placeholder="Email address"
+            class="input-form"
+            required
+          />
+        </label>
+
+        <label for="Message">
+          <textarea
+            name="Message"
+            id="message"
+            cols="30"
+            rows="6"
+            placeholder="Enter text here"
+            maxlength="500"
+            class="form-text-area"
+            required
+          ></textarea>
+        </label>
+
+        <button type="submit" class="form-button">Get in touch</button>
+      </form>
+      <ul class="form-section-media-icons">
+        <li>
+          <a href="https://github.com/aubinleyoung" target="_blank" rel="noopener"
+            ><img src="assets/icons/Vector2.svg" alt="Github link"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/aubin-simpeze-7a5b7a220/"
+            target="_blank" rel="noopener"
+            ><img src="assets/icons/Linkedin.svg" alt="Linkedin link"
+          /></a>
+        </li>
+        <li>
+          <a href="" target="_blank"
+            ><img src="assets/icons/Vector3.svg" alt="Angelist  link"
+          /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/SimpezeAubin" target="_blank" rel="noopener"
+            ><img src="assets/icons/Vector.svg" alt="Twitter link"
+          /></a>
+        </li>
+        <li>
+          <a href="" target="_blank"
+            ><img src="assets/icons/Vector1.svg" alt="Medium link"
+          /></a>
+        </li>
       </ul>
-    </div>
+      <hr class="end-line" />
+    </footer>
 
-
-  </header>
-  <section class="headline-container">
-    <h1 class="white headline-text">
-      <span class="headline-title">Hey There <br />
-        I'm Aubin</span><br />
-      I am a Software Developer
-    </h1>
-    <p class="white headline-p">
-      I can help you build a product , feature or website Look through some of
-      my work andexperience! If you like what you see and have a project you
-      need coded, don’t hestiate to contact me.
-    </p>
-    <ul class="social-media-icones-container">
-      <li>
-        <a href="https://github.com/aubinleyoung"><img src="assets/icons/1.png" alt="Github link" /></a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/aubin-simpeze-7a5b7a220/"><img src="assets/icons/2.png"
-            alt="LinkedIn link" /></a>
-      </li>
-      <li>
-        <a href=""><img src="assets/icons/3.png" alt="Angelist link" /></a>
-      </li>
-      <li>
-        <a href="https://twitter.com/SimpezeAubin"><img src="assets/icons/4.png" alt="Twitter link" /></a>
-      </li>
-      <li>
-        <a href=""><img src="assets/icons/5.png" alt="Medium-link" /></a>
-      </li>
-    </ul>
-  </section>
-  <section id="works-container">
-    <div class="recent-works-title-block">
-      <h2 class="recent-works-title">My Recent Works</h2>
-      <hr class="line" />
-    </div>
-    <div class="recent-works">
-   
-    </div>
-    <div class="pjt">
-
-    </div>
-   
-  </section>
-  <section id="about-me-container">
-    <div class="about-me-block">
-      <h3 class="works-title yelow abt-me">About me</h3>
-      <p class="font-montesori about-me-p white">
-        Hello I’m a software developer! I can help you build a product ,
-        feature orwebsite Look through some of my work and experience! If you
-        like what you see and have a project youneed coded, don’t hestiate to
-        contact me.
-      </p>
-      <button class="get-resume-btn" type="button">Get My Resume</button>
-    </div>
-    <hr class="line line2" />
-    <div class="categories-container font-montesori white">
-      <ul class="cat-title-2 grid1">
-        <li class="cat-title-1-1">Language</li>
-        <li>Javascript</li>
-        <li>Ruby</li>
-        <li>Html</li>
-        <li>Css</li>
-      </ul>
-
-      <ul class="cat-title-2 grid2">
-        <li class="cat-title-1-2">Frameworks</li>
-        <li>Bootstrap</li>
-        <li>Ruby on Rails</li>
-        <li>RSPec</li>
-        <li>CapyBara</li>
-        <li>Selenium</li>
-      </ul>
-
-      <ul class="cat-title-2 grid3">
-        <li class="cat-title-1-3">Skills</li>
-        <li>Codekit</li>
-        <li>Github</li>
-        <li>Codepen</li>
-        <li>Gitlab</li>
-        <li>Terminal</li>
-      </ul>
-    </div>
-  </section>
-
-  <footer id="contact" class="form-section">
-    <h2 class="contact-title font-montesori">
-      I'm always <br />interested in hearing <br />about new projects,
-      <br />so if you'd like to <br />chat please get in touch.
-    </h2>
-    <form action="https://formspree.io/f/mwkzgoyj" method="post" class="form-container">
-      <label for="Name">
-        <input type="text" name="Name" id="name" placeholder="Full name" maxlength="30" class="input-form" required />
-      </label>
-
-      <label for="Email">
-        <input type="email" name="Email" id="email" placeholder="Email address" class="input-form" required />
-      </label>
-
-      <label for="Message">
-        <textarea name="Message" id="message" cols="30" rows="6" placeholder="Enter text here" maxlength="500"
-          class="form-text-area" required></textarea>
-      </label>
-
-      <button type="submit" class="form-button">Get in touch</button>
-    </form>
-    <ul class="form-section-media-icons">
-      <li>
-        <a href="https://github.com/aubinleyoung" target="_blank"><img src="assets/icons/Vector2.svg"
-            alt="Github link" /></a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/aubin-simpeze-7a5b7a220/" target="_blank"><img
-            src="assets/icons/Linkedin.svg" alt="Linkedin link" /></a>
-      </li>
-      <li>
-        <a href="" target="_blank"><img src="assets/icons/Vector3.svg" alt="Angelist  link" /></a>
-      </li>
-      <li>
-        <a href="https://twitter.com/SimpezeAubin" target="_blank"><img src="assets/icons/Vector.svg"
-            alt="Twitter link" /></a>
-      </li>
-      <li>
-        <a href="" target="_blank"><img src="assets/icons/Vector1.svg" alt="Medium link" /></a>
-      </li>
-    </ul>
-    <hr class="end-line" />
-  </footer>
-
-  
-  <section class="pop-up-project-section">
-    
-  </section>
-  <script src="script.js"></script>
-</body>
-
+    <section class="pop-up-project-section"></section>
+    <script src="script.js"></script>
+  </body>
 </html>
