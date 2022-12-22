@@ -12,3 +12,330 @@ backToSection.forEach((link) => {
     navActive.classList.remove("display-active-menu");
   });
 });
+
+const recent=[
+   {  
+      id:1,
+      name:'Proffesional Art Printing Data',
+      description:'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.', 
+      featuredImage:'./assets/images/bgi1.png', 
+      technologies:["html","css","bootstrap","Ruby"], 
+      projecDetails:'see-project',
+      linkToLive_version:'See Live',
+      linkToSource:'See Source'
+   }
+]
+const table=[
+   {  
+      id:2,
+      name:'Multimedia post stories',
+      description:'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.', 
+      featuredImage:'assets/images/Snapshoot Portfolio.png', 
+      technologies:["html","css","bootstrap","Ruby"], 
+      projecDetails:'see-project',
+      linkToLive_version:'See Live',
+      linkToSource:'See Source'
+   },
+   {
+      id:3,  
+      name:'Proffesional Art Printing Data',
+      description:'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.', 
+      featuredImage:'assets/images/Snapshoot Portfolio.png', 
+      technologies:["html","css","bootstrap","Ruby"], 
+      projecDetails:'see-project',
+      linkToLive_version:'See Live',
+      linkToSource:'See Source'
+   },
+   {
+      id:4,
+      name:'Proffesional Art Printing Data',
+      description:'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.', 
+      featuredImage:'assets/images/Snapshoot Portfolio.png', 
+      technologies:["html","css","bootstrap","Ruby"], 
+      projecDetails:'see-project',
+      linkToLive_version:'See Live',
+      linkToSource:'See Source'
+   },
+   {
+      id:5,
+      name:'Proffesional Art Printing Data',
+      description:'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.', 
+      featuredImage:'assets/images/Snapshoot Portfolio.png', 
+      technologies:["html","css","bootstrap","Ruby"], 
+      projecDetails:'see-project',
+      linkToLive_version:'See Live',
+      linkToSource:'See Source'
+   },
+   {
+      id:6,
+      name:'Proffesional Art Printing Data',
+      description:'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.', 
+      featuredImage:'assets/images/Snapshoot Portfolio.png', 
+      technologies:["html","css","bootstrap","Ruby"], 
+      projecDetails:'see-project',
+      linkToLive_version:'See Live',
+      linkToSource:'See Source'
+   },
+   {
+      id:7,
+      name:'Proffesional Art Printing Data',
+      description:'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.', 
+      featuredImage:'assets/images/Snapshoot Portfolio.png', 
+      technologies:["html","css","bootstrap","Ruby"], 
+      projecDetails:'see-project',
+      linkToLive_version:'See Live',
+      linkToSource:'See Source'
+   }
+
+]
+const firstCard=document.querySelector('.recent-works')
+recent.map((element)=>{
+  
+   firstCard.innerHTML =`
+   <img src="${element.featuredImage}" alt="Multi post story" class="work-img" />
+   <div class="recent-work-second-block">
+     <h3 class="works-title blue-1">${element.name}</h3>
+     <p class="font-montesori blue-2">
+     ${element.description}
+     </p>
+     <ul class="tools-container">
+       <li class="tools">${element.technologies[0]}</li>
+       <li class="tools">${element.technologies[1]}</li>
+       <li class="tools">${element.technologies[2]}</li>
+       <li class="tools">${element.technologies[3]}</li>
+     </ul>
+     <button class="see-project-btn" type="button">${element.projecDetails}</button>
+   </div>
+   `
+})
+
+
+table.map((card) => {
+   const cards = document.querySelector('.pjt')
+   cards.innerHTML += `<div class="works work1">
+      <h3 class="works-title hide">${card.name}</h3>
+      <p class="font-montesori hide">
+         ${card.description}
+      </p>
+
+      <ul class="tools-container hide">
+      <li class="tools">${card.technologies[0]}</li>
+           <li class="tools">${card.technologies[1]}</li>
+          <li class="tools">${card.technologies[2]}</li>
+          <li class="tools">${card.technologies[3]}</li>
+      </ul>
+   
+
+      <button class="see-project pop" type="button"> ${card.projecDetails}</button>
+    </div>`
+})
+
+const popupProject = document.querySelector('.pop-up-project-section');
+const projects=document.querySelectorAll('.pop');
+projects.forEach((btn,index)=>{
+   btn.addEventListener('click',() => {
+      popupProject.classList.toggle('popup')
+      popupProject.innerHTML = `<div class="pop-up-project-block">
+      <div class="desk-pop-b-one">
+        <div class="pop-title-block">
+          <h2  class="contact-title font-montesori">${table[index].name}</h2>
+          <button  class="close-pop-up" type="button">
+            <img src="assets/icons/Icon - Cancel.png" alt="" class="cancel-popup">
+          </button>
+        </div>
+        <ul class="pop-up-tools tools-container">
+          <li class="tools">${table[index].technologies[0]}</li>
+          <li class="tools">${table[index].technologies[1]}</li>
+          <li class="tools">${table[index].technologies[2]}</li>
+        </ul>
+      </div>
+  
+      <div class="desk-pop-b-two">
+        <img src="${table[index].featuredImage}" alt=""  >
+      </div>
+  
+     <div class="desk-pop-b-three">
+      <p class="pop-up-text font-montesori blue-2"  >${table[index].description}</p>
+      <div class="pop-up-btn">
+        <button class="see-live-btn see-project-btn">${table[index].linkToLive_version} <img src="assets/icons/Icon.png" alt=""></button>
+        <button class="see-source-btn see-project-btn">${table[index].linkToSource}<img src="assets/icons/1.png" alt=""></button>
+      </div>
+     </div>
+    </div>`
+
+    document.querySelector('.close-pop-up').addEventListener('click', () => {
+      popupProject.classList.remove('popup')
+    })
+
+   })
+})
+
+
+
+
+const recentProjectPopup=document.querySelector('.see-project-btn')
+
+recentProjectPopup.addEventListener('click',()=>{
+   popupProject.classList.toggle('popup')
+   popupProject.innerHTML = `<div class="pop-up-project-block">
+   <div class="desk-pop-b-one">
+     <div class="pop-title-block">
+       <h2  class="contact-title font-montesori">${recent[0].name}</h2>
+       <button  class="close-pop-up" type="button">
+         <img src="assets/icons/Icon - Cancel.png" alt="" class="cancel-popup">
+       </button>
+     </div>
+     <ul class="pop-up-tools tools-container">
+       <li class="tools">${recent[0].technologies[0]}</li>
+       <li class="tools">${recent[0].technologies[1]}</li>
+       <li class="tools">${recent[0].technologies[2]}</li>
+     </ul>
+   </div>
+
+   <div class="desk-pop-b-two">
+     <img src="${recent[0].featuredImage}" alt=""  >
+   </div>
+
+  <div class="desk-pop-b-three">
+   <p class="pop-up-text font-montesori blue-2"  >${recent[0].description}</p>
+   <div class="pop-up-btn">
+     <button class="see-live-btn see-project-btn">${recent[0].linkToLive_version} <img src="assets/icons/Icon.png" alt=""></button>
+     <button class="see-source-btn see-project-btn">${recent[0].linkToSource}<img src="assets/icons/1.png" alt=""></button>
+   </div>
+  </div>
+ </div>`
+
+ document.querySelector('.close-pop-up').addEventListener('click', () => {
+   popupProject.classList.remove('popup')
+ })
+})
+
+
+
+
+
+
+// <div class="recent-works">
+// <img src="./assets/images/bgi1.png" alt="Multi post story" class="work-img" />
+// <div class="recent-work-second-block">
+//   <h3 class="works-title blue-1">Multi-Post Stories</h3>
+//   <p class="font-montesori blue-2">
+//     A daily selection of privately personalized reads; no accounts or
+//     sign-upsrequired. has been the industry's standard dummy text ever
+//     since the 1500s, when an unknown printer tooka standard dummy text.
+//   </p>
+//   <ul class="tools-container">
+//     <li class="tools">html</li>
+//     <li class="tools">css</li>
+//     <li class="tools">bootstrap</li>
+//     <li class="tools">Ruby</li>
+//   </ul>
+//   <button class="see-project-btn" type="button">See Project</button>
+// </div>
+// </div>
+
+
+
+
+
+
+
+// <div class="works work2" >
+// <h3 class="works-title hide">Profesional Art <br />Printing Data</h3>
+// <p class="font-montesori hide">
+//   A daily selection of privately personalized reads; no accounts or
+//   sign-upsrequired. has been the industry's standard dummy text ever
+//   since the 1500s, when an unknown printer tooka standard dummy text.
+// </p>
+// <ul class="tools-container hide">
+//   <li class="tools bg-btn">html</li>
+//   <li class="tools bg-btn">css</li>
+//   <li class="tools bg-btn">bootstrap</li>
+//   <li class="tools bg-btn">Ruby</li>
+// </ul>
+// <button class="see-project" type="button">See Project</button>
+// </div>
+// <div class="works work3" >
+// <h3 class="works-title hide">Profesional Art <br />Printing Data</h3>
+// <p class="font-montesori hide">
+//   A daily selection of privately personalized reads; no accounts or
+//   sign-upsrequired. has been the industry's standard dummy text ever
+//   since the 1500s, when an unknown printer tooka standard dummy text.
+// </p>
+// <ul class="tools-container hide">
+//   <li class="tools bg-btn">html</li>
+//   <li class="tools bg-btn">css</li>
+//   <li class="tools bg-btn">bootstrap</li>
+//   <li class="tools bg-btn">Ruby</li>
+// </ul>
+// <button class="see-project" type="button">See Project</button>
+// </div>
+// <div class="works work4">
+// <h3 class="works-title hide">Profesional Art <br />Printing Data</h3>
+// <p class="font-montesori hide">
+//   A daily selection of privately personalized reads; no accounts or
+//   sign-upsrequired. has been the industry's standard dummy text ever
+//   since the 1500s, when an unknown printer tooka standard dummy text.
+// </p>
+// <ul class="tools-container hide">
+//   <li class="tools bg-btn">html</li>
+//   <li class="tools bg-btn">css</li>
+//   <li class="tools bg-btn">bootstrap</li>
+//   <li class="tools bg-btn">Ruby</li>
+// </ul>
+// <button class="see-project" type="button">See Project</button>
+// </div>
+// <div class="works work5" >
+// <h3 class="works-title hide">Profesional Art <br />Printing Data</h3>
+// <p class="font-montesori hide">
+//   A daily selection of privately personalized reads; no accounts or
+//   sign-upsrequired. has been the industry's standard dummy text ever
+//   since the 1500s, when an unknown printer tooka standard dummy text.
+// </p>
+// <ul class="tools-container hide">
+//   <li class="tools bg-btn">html</li>
+//   <li class="tools bg-btn">css</li>
+//   <li class="tools bg-btn">bootstrap</li>
+//   <li class="tools bg-btn">Ruby</li>
+// </ul>
+// <button class="see-project" type="button">See Project</button>
+// </div>
+// <div class="works work6">
+// <h3 class="works-title hide">Profesional Art <br />Printing Data</h3>
+// <p class="font-montesori hide">
+//   A daily selection of privately personalized reads; no accounts or
+//   sign-upsrequired. has been the industry's standard dummy text ever
+//   since the 1500s, when an unknown printer tooka standard dummy text.
+// </p>
+// <ul class="tools-container hide">
+//   <li class="tools bg-btn">html</li>
+//   <li class="tools bg-btn">css</li>
+//   <li class="tools bg-btn">bootstrap</li>
+//   <li class="tools bg-btn">Ruby</li>
+// </ul>
+// <button class="see-project" type="button">See Project</button>
+// </div>
+
+
+
+
+
+
+
+// const projectDetails=document.querySelector('.see-project')
+// const projectPopup=document.querySelector('.pop-up-project-section')
+// const cancelPopup=document.getElementById('cancel-popup')
+
+
+// projectDetails.addEventListener('click',()=>{
+// projectPopup.style.display='block'
+
+// })
+// //For closing the
+// cancelPopup.addEventListener('click',()=>{
+//    projectPopup.style.display='none'
+   
+//    })
+
+
+

@@ -425,8 +425,12 @@ a {
   top: 0;
   left: 0;
   z-index: 2000;
+  display: none;
+  height: fit-content;
 }
-
+.popup {
+  display: block;
+}
 .pop-up-project-block {
   display: flex;
   flex-direction: column;
@@ -482,6 +486,7 @@ a {
   font-size: 20px;
   padding: 10px;
 }
+
 
 @media screen and (min-width: 1280px) {
   * {
@@ -749,12 +754,18 @@ a {
   }
 
   .pop-up-project-section {
-    background-color: #1c1a19;
+    background-color: rgba(0,0,0, 0.4);
     padding: 50px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 2000;
+    display: none;
+    height: fit-content;
+  }
+
+  .popup {
+    display: block;
   }
 
   .pop-up-project-block {
@@ -821,6 +832,10 @@ a {
   .end-line {
     display: none;
   }
-
+  .pjt{
+   display: grid;
+   grid-template-columns: auto auto auto;
+   grid-template-rows: auto auto auto;
+  }
   /* Not display on desktop */
 }
