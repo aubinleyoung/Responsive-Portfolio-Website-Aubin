@@ -74,7 +74,7 @@ To get a local copy up and running follow these simple example steps.
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Responsiveness]**
+- [ ] **[Responsiveness ]**
 - [ ] **[Desktop Screen]**
 - [ ] **[Add new skills]**
 
