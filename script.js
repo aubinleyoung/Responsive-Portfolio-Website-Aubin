@@ -18,9 +18,9 @@ const recent = [
     id: 1,
     name: 'Proffesional Art Printing Data',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     featuredImage: './assets/images/bgi1.png',
-    technologies: ['html', 'css', 'bootstrap', 'Ruby'],
+    technologies: ['html', 'css', 'bootstrap', 'React','Ruby','JavaScript'],
     projecDetails: 'see-project',
     linkToLive_version: 'See Live',
     linkToSource: 'https://github.com/aubinleyoung',
@@ -33,7 +33,7 @@ const table = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.',
     featuredImage: 'assets/images/Snapshoot Portfolio.png',
-    technologies: ['html', 'css', 'bootstrap', 'Ruby'],
+    technologies: ['html', 'css', 'bootstrap', 'React','Ruby','JavaScript'],
     projecDetails: 'see-project',
     linkToLive_version: 'See Live',
     linkToSource: 'See Source',
@@ -44,7 +44,7 @@ const table = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.',
     featuredImage: 'assets/images/Snapshoot Portfolio.png',
-    technologies: ['html', 'css', 'bootstrap', 'Ruby'],
+    technologies: ['html', 'css', 'bootstrap', 'React','Ruby','JavaScript'],
     projecDetails: 'see-project',
     linkToLive_version: 'See Live',
     linkToSource: 'See Source',
@@ -55,7 +55,7 @@ const table = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.',
     featuredImage: 'assets/images/Snapshoot Portfolio.png',
-    technologies: ['html', 'css', 'bootstrap', 'Ruby'],
+    technologies: ['html', 'css', 'bootstrap', 'React','Ruby','JavaScript'],
     projecDetails: 'see-project',
     linkToLive_version: 'See Live',
     linkToSource: 'See Source',
@@ -66,7 +66,7 @@ const table = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.',
     featuredImage: 'assets/images/Snapshoot Portfolio.png',
-    technologies: ['html', 'css', 'bootstrap', 'Ruby'],
+    technologies: ['html', 'css', 'bootstrap', 'React','Ruby','JavaScript'],
     projecDetails: 'see-project',
     linkToLive_version: 'See Live',
     linkToSource: 'See Source',
@@ -77,7 +77,7 @@ const table = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.',
     featuredImage: 'assets/images/Snapshoot Portfolio.png',
-    technologies: ['html', 'css', 'bootstrap', 'Ruby'],
+    technologies: ['html', 'css', 'bootstrap', 'React','Ruby','JavaScript'],
     projecDetails: 'see-project',
     linkToLive_version: 'See Live',
     linkToSource: 'See Source',
@@ -88,7 +88,7 @@ const table = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.',
     featuredImage: 'assets/images/Snapshoot Portfolio.png',
-    technologies: ['html', 'css', 'bootstrap', 'Ruby'],
+    technologies: ['html', 'css', 'bootstrap', 'React','Ruby','JavaScript'],
     projecDetails: 'see-project',
     linkToLive_version: 'See Live',
     linkToSource: 'See Source',
@@ -109,6 +109,8 @@ recent.map((element) => {
        <li class="tools">${element.technologies[1]}</li>
        <li class="tools">${element.technologies[2]}</li>
        <li class="tools">${element.technologies[3]}</li>
+
+   
      </ul>
      <button class="see-project-btn" type="button">${element.projecDetails}</button>
    </div>`;
@@ -129,6 +131,7 @@ table.map((card) => {
          <li class="tools">${card.technologies[1]}</li>
         <li class="tools">${card.technologies[2]}</li>
         <li class="tools">${card.technologies[3]}</li>
+    
     </ul>
  
 
@@ -156,9 +159,10 @@ projects.forEach((btn, index) => {
           <li class="tools">${table[index].technologies[2]}</li>
         </ul>
       </div>
-  
+      <div class="desk-pop-b-one-x">
+
       <div class="desk-pop-b-two">
-        <img src="${table[index].featuredImage}" alt=""  >
+        <img src="${table[index].featuredImage}" alt="" >
       </div>
   
      <div class="desk-pop-b-three">
@@ -168,6 +172,8 @@ projects.forEach((btn, index) => {
         <button class="see-source-btn see-project-btn"><a href="${recent[0].linkToSource}"></a>See Source<img src="assets/icons/1.png" alt=""></button>
       </div>
      </div>
+     </div>
+
     </div>`;
 
     document.querySelector('.close-pop-up').addEventListener('click', () => {
@@ -194,9 +200,9 @@ recentProjectPopup.addEventListener('click', () => {
        <li class="tools">${recent[0].technologies[2]}</li>
      </ul>
    </div>
-
+<div class="desk-pop-b-one-x">
    <div class="desk-pop-b-two">
-     <img src="${recent[0].featuredImage}" alt=""  >
+     <img src="${recent[0].featuredImage}" alt="">
    </div>
 
   <div class="desk-pop-b-three">
@@ -205,6 +211,8 @@ recentProjectPopup.addEventListener('click', () => {
      <button class="see-live-btn see-project-btn"><a href="${recent[0].linkToLive_version}"></a>See Live<img src="assets/icons/Icon.png" alt=""></button>
      <button class="see-source-btn see-project-btn"><a href="${recent[0].linkToSource}"></a>See Source <img src="assets/icons/1.png" alt=""></button>
    </div>
+  </div>
+
   </div>
  </div>`;
 
