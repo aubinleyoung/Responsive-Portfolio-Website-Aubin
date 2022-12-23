@@ -18,9 +18,9 @@ const recent = [
     id: 1,
     name: 'Proffesional Art Printing Data',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+      'Lorem Ipsum is simply dummy text of the printing and typtype and scrambled it 1960s with the releax map lapora verita.',
     featuredImage: './assets/images/bgi1.png',
-    technologies: ['html', 'css', 'bootstrap', 'React','Ruby','JavaScript'],
+    technologies: ['html', 'css', 'bootstrap', 'React', 'Ruby', 'JavaScript'],
     projecDetails: 'see-project',
     linkToLive_version: 'See Live',
     linkToSource: 'https://github.com/aubinleyoung',
@@ -33,7 +33,7 @@ const table = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.',
     featuredImage: 'assets/images/Snapshoot Portfolio.png',
-    technologies: ['html', 'css', 'bootstrap', 'React','Ruby','JavaScript'],
+    technologies: ['html', 'css', 'bootstrap', 'React', 'Ruby', 'JavaScript'],
     projecDetails: 'see-project',
     linkToLive_version: 'See Live',
     linkToSource: 'See Source',
@@ -44,7 +44,7 @@ const table = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.',
     featuredImage: 'assets/images/Snapshoot Portfolio.png',
-    technologies: ['html', 'css', 'bootstrap', 'React','Ruby','JavaScript'],
+    technologies: ['html', 'css', 'bootstrap', 'React', 'Ruby', 'JavaScript'],
     projecDetails: 'see-project',
     linkToLive_version: 'See Live',
     linkToSource: 'See Source',
@@ -55,7 +55,7 @@ const table = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.',
     featuredImage: 'assets/images/Snapshoot Portfolio.png',
-    technologies: ['html', 'css', 'bootstrap', 'React','Ruby','JavaScript'],
+    technologies: ['html', 'css', 'bootstrap', 'React', 'Ruby', 'JavaScript'],
     projecDetails: 'see-project',
     linkToLive_version: 'See Live',
     linkToSource: 'See Source',
@@ -66,7 +66,7 @@ const table = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.',
     featuredImage: 'assets/images/Snapshoot Portfolio.png',
-    technologies: ['html', 'css', 'bootstrap', 'React','Ruby','JavaScript'],
+    technologies: ['html', 'css', 'bootstrap', 'React', 'Ruby', 'JavaScript'],
     projecDetails: 'see-project',
     linkToLive_version: 'See Live',
     linkToSource: 'See Source',
@@ -77,7 +77,7 @@ const table = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.',
     featuredImage: 'assets/images/Snapshoot Portfolio.png',
-    technologies: ['html', 'css', 'bootstrap', 'React','Ruby','JavaScript'],
+    technologies: ['html', 'css', 'bootstrap', 'React', 'Ruby', 'JavaScript'],
     projecDetails: 'see-project',
     linkToLive_version: 'See Live',
     linkToSource: 'See Source',
@@ -88,7 +88,7 @@ const table = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.',
     featuredImage: 'assets/images/Snapshoot Portfolio.png',
-    technologies: ['html', 'css', 'bootstrap', 'React','Ruby','JavaScript'],
+    technologies: ['html', 'css', 'bootstrap', 'React', 'Ruby', 'JavaScript'],
     projecDetails: 'see-project',
     linkToLive_version: 'See Live',
     linkToSource: 'See Source',
@@ -162,7 +162,7 @@ projects.forEach((btn, index) => {
       <div class="desk-pop-b-one-x">
 
       <div class="desk-pop-b-two">
-        <img src="${table[index].featuredImage}" alt="" >
+        <img src="${table[index].featuredImage}" alt=""  class="project-popup-image">
       </div>
   
      <div class="desk-pop-b-three">
@@ -202,7 +202,7 @@ recentProjectPopup.addEventListener('click', () => {
    </div>
 <div class="desk-pop-b-one-x">
    <div class="desk-pop-b-two">
-     <img src="${recent[0].featuredImage}" alt="">
+     <img src="${recent[0].featuredImage}" alt="" class="project-popup-image">
    </div>
 
   <div class="desk-pop-b-three">
