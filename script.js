@@ -148,7 +148,7 @@ projects.forEach((btn, index) => {
     popupProject.innerHTML = `<div class="pop-up-project-block">
       <div class="desk-pop-b-one">
         <div class="pop-title-block">
-          <h2  class="contact-title font-montesori">${table[index].name}</h2>
+          <h2  class="popup-title contact-title font-montesori">${table[index].name}</h2>
           <button  class="close-pop-up" type="button">
             <img src="assets/icons/Icon - Cancel.png" alt="" class="cancel-popup">
           </button>
@@ -189,7 +189,7 @@ recentProjectPopup.addEventListener('click', () => {
   popupProject.innerHTML = `<div class="pop-up-project-block">
    <div class="desk-pop-b-one">
      <div class="pop-title-block">
-       <h2  class="contact-title font-montesori">${recent[0].name}</h2>
+       <h2  class="popup-title contact-title font-montesori">${recent[0].name}</h2>
        <button  class="close-pop-up" type="button">
          <img src="assets/icons/Icon - Cancel.png" alt="" class="cancel-popup">
        </button>

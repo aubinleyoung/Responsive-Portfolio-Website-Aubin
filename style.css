@@ -445,7 +445,7 @@ a {
 
 .pop-title-block {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -488,6 +488,10 @@ a {
   height: auto;
   font-size: 10px;
   padding: 10px;
+}
+
+.popup-title {
+  font-size: 18px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -723,7 +727,7 @@ a {
     grid-row: 1/2;
     text-align: left;
     padding-left: 60px;
-    align-items: flex-start;
+    align-items: start;
   }
 
   .form-contact {
@@ -754,7 +758,7 @@ a {
   }
 
   .pop-up-project-section {
-    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
     padding: 50px;
     position: fixed;
     top: 0;
@@ -770,9 +774,6 @@ a {
   }
 
   .pop-up-project-block {
-    /* display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto; */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -857,6 +858,11 @@ a {
   /* Not display on desktop */
   .menu-btn {
     display: none;
+  }
+
+  .popup-title {
+    font-size: 2em;
+    padding-left: 0;
   }
 
   .end-line {
