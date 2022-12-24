@@ -122,7 +122,7 @@
       I'm always <br />interested in hearing <br />about new projects,
       <br />so if you'd like to <br />chat please get in touch.
     </h2>
-    <form action="https://formspree.io/f/mwkzgoyj" method="post" class="form-container">
+    <form action="https://formspree.io/f/mwkzgoyj" method="post" class="form-container" id="form">
       <label for="Name">
         <input type="text" name="Name" id="name" placeholder="Full name" maxlength="30" class="input-form" required />
       </label>
@@ -130,11 +130,11 @@
       <label for="Email">
         <input type="email" name="Email" id="email" placeholder="Email address" class="input-form" required />
       </label>
-
       <label for="Message">
         <textarea name="Message" id="message" cols="30" rows="6" placeholder="Enter text here" maxlength="500"
           class="form-text-area" required></textarea>
       </label>
+      <label for="email" id="error"></label>
 
       <button type="submit" class="form-button">Get in touch</button>
     </form>
