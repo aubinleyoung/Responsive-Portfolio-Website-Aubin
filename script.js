@@ -221,16 +221,16 @@ recentProjectPopup.addEventListener('click', () => {
   });
 });
 
-//Form validation
+// Form validation
 
-const form=document.getElementById('form');
-const email=document.getElementById('email');
-const error=document.getElementById('error');
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const error = document.getElementById('error');
 
-form.addEventListener('submit',(e)=>{
-if(email.value != email.value.toLowerCase()){
-  e.preventDefault();
-  error.style.color="red"
-  error.innerText="Error: lowercase is required to the email"
-}
-})
+form.addEventListener('submit', (e) => {
+  if (email.value !== email.value.toLowerCase()) {
+    e.preventDefault();
+    error.style.color = 'red';
+    error.innerText = 'Error: lowercase is required to the email';
+  }
+});
