@@ -33,7 +33,23 @@
 
 -Html
 -Css
+<!-- Features -->
 
+### Key Features <a name="key-features"></a>
+
+> Describe between 1-3 key features of the application.
+
+- **[Introducing myself as a software developer]**
+- **[My Skills]**
+- **[My contact]**
+- **[My past projects]**
+- **[Responsiveness ]**
+- **[Desktop and Mobile version]**
+- **[Interactive hamburger menu]**
+- **[Modal pop up on clicking to see project]**
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
@@ -74,9 +90,9 @@ To get a local copy up and running follow these simple example steps.
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Responsiveness]**
-- [ ] **[Desktop Screen]**
-- [ ] **[Add new skills]**
+- [ ] **[Add contact form validation ]**
+- [ ] **[Add more animations]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
