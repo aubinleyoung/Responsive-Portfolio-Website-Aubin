@@ -226,6 +226,7 @@ recentProjectPopup.addEventListener('click', () => {
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 const error = document.getElementById('error');
+const name=document.getElementById('name')
 
 form.addEventListener('submit', (e) => {
   if (email.value !== email.value.toLowerCase()) {
@@ -234,3 +235,22 @@ form.addEventListener('submit', (e) => {
     error.innerText = 'Error: lowercase is required to the email';
   }
 });
+
+//Local storage
+
+window.addEventListener('beforeunload',()=> {
+  const storeDatas= {
+    name:form.name.value,
+    email:form.email.value,
+
+  }
+  window.localStorage.setItem('DataForm', JSON.stringify(storeDatas))
+})
+
+//Get data to store
+window.addEventListener('load',()=>{
+  const saveDatas=JSON.parse(window.localStorage.getItem('DataForm'));
+  form.name.value=saveDatas.name;
+  form.email.value=saveDatas.email;
+
+})
