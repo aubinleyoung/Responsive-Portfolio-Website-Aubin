@@ -498,7 +498,7 @@ a {
   * {
     margin: 0;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   /* Content of the page */
