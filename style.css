@@ -498,7 +498,7 @@ a {
   * {
     margin: 0;
 
-    /* border: 1px solid red; */
+    border: 1px solid red;
   }
 
   /* Content of the page */
@@ -760,17 +760,20 @@ a {
   .pop-up-project-section {
     backdrop-filter: blur(5px);
     padding: 50px;
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 2000;
     display: none;
     bottom: 0;
     width: 90vw;
+    position: fixed;
+    overflow:auto;
+    
   }
 
   .popup {
     display: flex;
+    
   }
 
   .pop-up-project-block {
@@ -782,7 +785,10 @@ a {
     background-color: white;
     padding: 20px;
     align-self: center;
-    width: 100%;
+    width: 95%;
+
+    
+  
   }
 
   .desk-pop-b-one {
@@ -794,7 +800,8 @@ a {
 
   .desk-pop-b-one-x {
     display: flex;
-    justify-content: space-between;
+
+    gap: 15px;
   }
 
   .pop-title-block {

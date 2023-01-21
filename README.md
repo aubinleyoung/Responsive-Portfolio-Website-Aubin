@@ -31,8 +31,9 @@
 
 ## 🛠 Built With <a name="built-with"></a>
 
--Html
--Css
+## Html
+## Css
+## JavaScript
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
