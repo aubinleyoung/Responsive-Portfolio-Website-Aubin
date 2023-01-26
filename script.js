@@ -16,14 +16,14 @@ backToSection.forEach((link) => {
 const recent = [
   {
     id: 1,
-    name: 'Proffesional Art Printing Data',
+    name: 'Golden Event Website',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typtype and scrambled it 1960s with the releax map lapora verita.',
-    featuredImage: './assets/images/bgi1.png',
-    technologies: ['html', 'css', 'bootstrap', 'React', 'Ruby', 'JavaScript'],
+      'It is a website that helps different people around the world to make public their events on the web.',
+    featuredImage: './assets/images/event.jpg',
+    technologies: ['html', 'css','JavaScript'],
     projecDetails: 'see-project',
-    linkToLive_version: 'See Live',
-    linkToSource: 'https://github.com/aubinleyoung',
+    linkToLive_version: 'https://aubinleyoung.github.io/Event-Website/',
+    linkToSource: 'https://github.com/aubinleyoung/Event-Website',
   },
 ];
 const table = [
@@ -96,9 +96,13 @@ const table = [
 ];
 
 const firstCard = document.querySelector('.recent-works');
+
+//First project
 recent.map((element) => {
   firstCard.innerHTML = `
-   <img src="${element.featuredImage}" alt="Multi post story" class="work-img" />
+  <div class="work-img-container">
+  <img src="${element.featuredImage}" alt="Multi post story" class="work-img" />
+  </div>
    <div class="recent-work-second-block">
      <h3 class="works-title blue-1">${element.name}</h3>
      <p class="font-montesori blue-2">
@@ -108,7 +112,7 @@ recent.map((element) => {
        <li class="tools">${element.technologies[0]}</li>
        <li class="tools">${element.technologies[1]}</li>
        <li class="tools">${element.technologies[2]}</li>
-       <li class="tools">${element.technologies[3]}</li>
+   
 
    
      </ul>
@@ -119,6 +123,7 @@ recent.map((element) => {
 
 const cards = document.querySelector('.pjt');
 
+//All projects
 table.map((card) => {
   cards.innerHTML += `<div class="works 'work'+${card.id}">
     <h3 class="works-title hide">${card.name}</h3>
@@ -142,6 +147,8 @@ table.map((card) => {
 
 const popupProject = document.querySelector('.pop-up-project-section');
 const projects = document.querySelectorAll('.pop');
+
+//Pop-up all projects
 projects.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     popupProject.classList.toggle('popup');
@@ -161,7 +168,7 @@ projects.forEach((btn, index) => {
       </div>
       <div class="desk-pop-b-one-x">
 
-      <div class="desk-pop-b-two">
+      <div class="desk-pop-b-two work-img-container">
         <img src="${table[index].featuredImage}" alt=""  class="project-popup-image">
       </div>
   
@@ -184,6 +191,8 @@ projects.forEach((btn, index) => {
 
 const recentProjectPopup = document.querySelector('.see-project-btn');
 
+// First project pop-up
+
 recentProjectPopup.addEventListener('click', () => {
   popupProject.classList.toggle('popup');
   popupProject.innerHTML = `<div class="pop-up-project-block">
@@ -201,15 +210,15 @@ recentProjectPopup.addEventListener('click', () => {
      </ul>
    </div>
 <div class="desk-pop-b-one-x">
-   <div class="desk-pop-b-two">
+   <div class="desk-pop-b-two work-img-container">
      <img src="${recent[0].featuredImage}" alt="" class="project-popup-image">
    </div>
 
   <div class="desk-pop-b-three">
    <p class="pop-up-text font-montesori blue-2"  >${recent[0].description}</p>
    <div class="pop-up-btn">
-     <button class="see-live-btn see-project-btn"><a href="${recent[0].linkToLive_version}"></a>See Live<img src="assets/icons/Icon.png" alt=""></button>
-     <button class="see-source-btn see-project-btn"><a href="${recent[0].linkToSource}"></a>See Source <img src="assets/icons/1.png" alt=""></button>
+     <button class="see-live-btn see-project-btn"><a href="${recent[0].linkToLive_version}">See Live<img</a> <img src="assets/icons/Icon.png" alt=""></button>
+     <button class="see-source-btn see-project-btn"><a href="${recent[0].linkToSource}">See Source</a> <img src="assets/icons/1.png" alt=""></button>
    </div>
   </div>
 
