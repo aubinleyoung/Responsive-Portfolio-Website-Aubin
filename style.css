@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Montserrat:wght@100;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Crete+Round&family=Montserrat:wght@100;500&display=swap");
 
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+
 * {
   margin: 0;
 
@@ -9,7 +18,6 @@
 
 a {
   text-decoration: none;
-
 }
 
 /* class to import */
@@ -179,12 +187,10 @@ a {
   border: none;
 }
 
-
-
 .see-project-btn:active {
   scale: 0.9;
   color: white;
-  background-color:#8a3b00;
+  background-color: #8a3b00;
   border: none;
 }
 
@@ -217,8 +223,6 @@ a {
   color: white;
   transition: ease-in-out;
 }
-
-
 
 .see-project:active {
   scale: 0.9;
@@ -429,7 +433,9 @@ a {
   background-color: white;
   padding: 15px;
   align-self: center;
-  margin: 30px 10px 30px 10px;
+
+  /* margin: 30px 10px 30px 10px; */
+  margin: auto;
 }
 
 .pop-title-block {
@@ -457,6 +463,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .see-live-btn {
@@ -466,17 +473,19 @@ a {
   height: 100%;
   padding: 20px;
   font-size: 10px;
-  width: 100%;
-  
+  width: 150px;
 }
-.see-live-btn a , .see-source-btn a {
+
+.see-live-btn a,
+.see-source-btn a {
   color: white;
 }
+
 .see-source-btn {
   display: flex;
   align-items: center;
   gap: 15px;
-  width: fit-content;
+  width: 150px;
   height: auto;
   font-size: 10px;
   padding: 10px;
@@ -485,22 +494,26 @@ a {
 .popup-title {
   font-size: 18px;
 }
-.work-img-container{
+
+.work-img-container {
   width: 300px;
   height: auto;
   border: 1px solid black;
 }
-.work-img{
-width: 100%;
-height: 100%;
-overflow: hidden;
-}
-.project-popup-image {
+
+.work-img {
   width: 100%;
-  height:100%;
+  height: 100%;
   overflow: hidden;
 }
-@media screen and (min-width: 1280px) {
+
+.project-popup-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 2560px) {
   * {
     margin: 0;
 
@@ -587,6 +600,7 @@ overflow: hidden;
     margin-top: 30px;
     align-self: flex-end;
   }
+
   .work-img-container {
     width: 730px;
     height: auto;
@@ -596,7 +610,6 @@ overflow: hidden;
   .work-img {
     width: 100%;
     height: 100%;
-    overflow: ;
   }
 
   .recent-works {
@@ -624,6 +637,8 @@ overflow: hidden;
 
   .works {
     cursor: pointer;
+
+    /* background-image: url(./assets/images/event.jpg); */
   }
 
   .works:hover > .hide {
@@ -639,21 +654,6 @@ overflow: hidden;
     display: block;
   }
 
-  .work2 {
-    background-image: url(assets/images/Img\ Placeholder\ 3.png);
-  }
-
-  .work3 {
-    background-image: url(assets/images/Mask\ Group\ 1.png);
-  }
-
-  .work5 {
-    background-image: url(assets/images/Img\ Placeholder\ 3.png);
-  }
-
-  .work6 {
-    background-image: url(assets/images/Mask\ Group\ 1.png);
-  }
 
   /* About me */
   #about-me-container {
@@ -768,10 +768,11 @@ overflow: hidden;
   .desk {
     border: 1px solid red;
   }
+
   .see-project-btn:hover {
     border-radius: 10px;
   }
-  
+
   .pop-up-project-section {
     backdrop-filter: blur(5px);
     padding: 50px;
@@ -782,13 +783,12 @@ overflow: hidden;
     bottom: 0;
     width: 90vw;
     position: fixed;
-    overflow:auto;
-    
+    overflow: auto;
   }
 
   .popup {
     display: flex;
-    
+    justify-content: center;
   }
 
   .pop-up-project-block {
@@ -796,14 +796,11 @@ overflow: hidden;
     flex-direction: column;
     gap: 20px;
     border: 1px solid black;
-    margin: auto;
+    margin: 15px 0 0 50px;
     background-color: white;
     padding: 20px;
     align-self: center;
     width: 95%;
-
-    
-  
   }
 
   .desk-pop-b-one {
@@ -815,7 +812,6 @@ overflow: hidden;
 
   .desk-pop-b-one-x {
     display: flex;
-
     gap: 15px;
   }
 
@@ -876,7 +872,6 @@ overflow: hidden;
     width: 100%;
     height: 100%;
     overflow: hidden;
-
   }
 
   /* Not display on desktop */
@@ -894,10 +889,17 @@ overflow: hidden;
   }
 
   .pjt {
+    margin: 0 0 0 20px;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
+    padding: 20px;
+    gap: 20px;
   }
+}
 
-  /* Not display on desktop */
+.pjt :nth-child(1) {
+  background-image: url(./assets/images/awesome-books.jpg);
+  overflow: hidden;
+  background-position: center;
 }

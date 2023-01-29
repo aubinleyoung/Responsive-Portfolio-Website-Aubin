@@ -20,7 +20,7 @@ const recent = [
     description:
       'It is a website that helps different people around the world to make public their events on the web.',
     featuredImage: './assets/images/event.jpg',
-    technologies: ['html', 'css','JavaScript'],
+    technologies: ['html', 'css', 'JavaScript'],
     projecDetails: 'see-project',
     linkToLive_version: 'https://aubinleyoung.github.io/Event-Website/',
     linkToSource: 'https://github.com/aubinleyoung/Event-Website',
@@ -29,14 +29,15 @@ const recent = [
 const table = [
   {
     id: 2,
-    name: 'Multimedia post stories',
+    name: 'Awesome Books',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.',
-    featuredImage: 'assets/images/Snapshoot Portfolio.png',
-    technologies: ['html', 'css', 'bootstrap', 'React', 'Ruby', 'JavaScript'],
+      'Is a basic website that allows users to add/remove books from a list.',
+    featuredImage: 'assets/images/awesome-books.jpg',
+    technologies: ['html', 'css', 'JavaScript'],
+
     projecDetails: 'see-project',
-    linkToLive_version: 'See Live',
-    linkToSource: 'See Source',
+    linkToLive_version: 'https://aubinleyoung.github.io/Awesome-Books',
+    linkToSource: 'https://github.com/aubinleyoung/Awesome-Books',
   },
   {
     id: 3,
@@ -44,7 +45,7 @@ const table = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-upsrequired. has been the industry s standard dummy text ever since the 1500s, when an unknown printer tooka standard dummy text.',
     featuredImage: 'assets/images/Snapshoot Portfolio.png',
-    technologies: ['html', 'css', 'bootstrap', 'React', 'Ruby', 'JavaScript'],
+    technologies: ['html', 'css', 'JavaScript'],
     projecDetails: 'see-project',
     linkToLive_version: 'See Live',
     linkToSource: 'See Source',
@@ -97,7 +98,7 @@ const table = [
 
 const firstCard = document.querySelector('.recent-works');
 
-//First project
+// First project
 recent.map((element) => {
   firstCard.innerHTML = `
   <div class="work-img-container">
@@ -123,7 +124,7 @@ recent.map((element) => {
 
 const cards = document.querySelector('.pjt');
 
-//All projects
+// All projects
 table.map((card) => {
   cards.innerHTML += `<div class="works 'work'+${card.id}">
     <h3 class="works-title hide">${card.name}</h3>
@@ -135,7 +136,7 @@ table.map((card) => {
     <li class="tools">${card.technologies[0]}</li>
          <li class="tools">${card.technologies[1]}</li>
         <li class="tools">${card.technologies[2]}</li>
-        <li class="tools">${card.technologies[3]}</li>
+     
     
     </ul>
  
@@ -148,7 +149,7 @@ table.map((card) => {
 const popupProject = document.querySelector('.pop-up-project-section');
 const projects = document.querySelectorAll('.pop');
 
-//Pop-up all projects
+// Pop-up all projects
 projects.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     popupProject.classList.toggle('popup');
@@ -175,8 +176,8 @@ projects.forEach((btn, index) => {
      <div class="desk-pop-b-three">
       <p class="pop-up-text font-montesori blue-2"  >${table[index].description}</p>
       <div class="pop-up-btn">
-        <button class="see-live-btn see-project-btn"><a href="${recent[0].linkToLive_version}"></a>See Live<img src="assets/icons/Icon.png" alt=""></button>
-        <button class="see-source-btn see-project-btn"><a href="${recent[0].linkToSource}"></a>See Source<img src="assets/icons/1.png" alt=""></button>
+        <button class="see-live-btn see-project-btn"><a href="${table[index].linkToLive_version}">See Live</a><img src="assets/icons/Icon.png" alt=""></button>
+        <button class="see-source-btn see-project-btn"><a href="${table[index].linkToSource}">See Source</a><img src="assets/icons/1.png" alt=""></button>
       </div>
      </div>
      </div>
@@ -235,7 +236,7 @@ recentProjectPopup.addEventListener('click', () => {
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 const error = document.getElementById('error');
-const name=document.getElementById('name')
+const name = document.getElementById('name');
 
 form.addEventListener('submit', (e) => {
   if (email.value !== email.value.toLowerCase()) {
@@ -245,21 +246,20 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-//Local storage
+// Local storage
 
-window.addEventListener('beforeunload',()=> {
-  const storeDatas= {
-    name:form.name.value,
-    email:form.email.value,
+window.addEventListener('beforeunload', () => {
+  const storeDatas = {
+    name: form.name.value,
+    email: form.email.value,
 
-  }
-  window.localStorage.setItem('DataForm', JSON.stringify(storeDatas))
-})
+  };
+  window.localStorage.setItem('DataForm', JSON.stringify(storeDatas));
+});
 
-//Get data to store
-window.addEventListener('load',()=>{
-  const saveDatas=JSON.parse(window.localStorage.getItem('DataForm'));
-  form.name.value=saveDatas.name;
-  form.email.value=saveDatas.email;
-
-})
+// Get data to store
+window.addEventListener('load', () => {
+  const saveDatas = JSON.parse(window.localStorage.getItem('DataForm'));
+  form.name.value = saveDatas.name;
+  form.email.value = saveDatas.email;
+});
