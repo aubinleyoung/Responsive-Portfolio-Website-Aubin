@@ -1,6 +1,6 @@
 # Responsive-Portfolio-Website-Aubin
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-![](./assets/images/portfolio-view)
+![](./assets/images/portfolio-view.jpg)
 
 <a name="readme-top"></a>
 <!-- TABLE OF CONTENTS -->
