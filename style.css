@@ -898,8 +898,8 @@ a {
   }
 }
 
-.pjt :nth-child(1) {
+/* .pjt :nth-child(1) {
   background-image: url(./assets/images/awesome-books.jpg);
   overflow: hidden;
   background-position: center;
-}
+} */
