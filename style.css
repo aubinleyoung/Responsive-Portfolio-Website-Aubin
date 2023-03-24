@@ -143,8 +143,9 @@ a {
 
 #works-container {
   display: grid;
-  grid-template-rows: 150px auto 450px 450px 450px 450px 450px 450px 100px;
+  grid-template-rows: 150px auto;
   padding-top: 8em;
+  padding-bottom: 2em;
 }
 
 .recent-works-title-block {
