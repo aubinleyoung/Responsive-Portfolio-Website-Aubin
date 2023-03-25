@@ -539,6 +539,9 @@ a {
     gap: 30px;
     text-decoration: none;
   }
+  .portfolio-menu > li > a:hover,.portfolio-menu > li > a:focus{
+    color: #ff6b00;
+  }
 
   .headline-container {
     height: 72vh;
